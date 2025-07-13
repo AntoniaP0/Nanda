@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Namora comigo?</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #fdf6f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .mensagem {
+      max-width: 600px;
+      margin-bottom: 40px;
+      font-size: 1.2rem;
+    }
+    .caixa {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    button {
+      margin: 15px;
+      padding: 12px 24px;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.2s ease-in-out;
+    }
+    .sim { background-color: #4CAF50; color: white; }
+    .nao { background-color: #f44336; color: white; }
+    button:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="mensagem">
+    <p>“Ser apaixonada por você não era o suficiente... ser sua ficante também não era o suficiente...”</p>
+  </div>
+
+  <div class="caixa">
+    <h2>Namora comigo? 👉</h2>
+    <button class="sim" onclick="respostaSim()">👊 Sim</button>
+    <button class="nao" onclick="respostaNao()">🤡 Não</button>
+  </div>
+
+  <script>
+    function respostaSim() {
+      alert("Aaaah, eu sabia! 💖");
+    }
+
+    function respostaNao() {
+      window.location.href = "404.html";
+    }
+  </script>
+</body>
+</html>
